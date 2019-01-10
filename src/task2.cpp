@@ -1,14 +1,13 @@
 const char* greet(int thour, int tmin)
-
 {
 	if (thour >= 0 && thour < 6)
-		return "Доброй ночи!";
+		return "Р”РѕР±СЂРѕР№ РЅРѕС‡Рё!";
 	else if (thour >= 6 && thour < 12)
-		return "Доброе утро!";
+		return "Р”РѕР±СЂРѕРµ СѓС‚СЂРѕ!";
 	else if (thour >= 12 && thour < 18)
-		return "Добрый день!";
+		return "Р”РѕР±СЂС‹Р№ РґРµРЅСЊ!";
 	else if (thour >= 18 && thour < 24)
-		return "Добрый вечер!";
+		return "Р”РѕР±СЂС‹Р№ РІРµС‡РµСЂ!";
 	else
-		return "Неправильное время!";
+		return "РќРµРїСЂР°РІРёР»СЊРЅРѕРµ РІСЂРµРјСЏ!";
 }
