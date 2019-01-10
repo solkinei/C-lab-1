@@ -1,13 +1,14 @@
 const char* greet(int hour, int min)
 {
+
 	if (hour >= 0 && hour < 6)
-		return "Доброй ночи!";
-	else if (hour >= 6 && hour < 12)
-		return "Доброе утро!";
-	else if (hour >= 12 && hour < 18)
-		return "Добрый день!";
+		return "Good night!";
+	else if (hour >= 6 && hour < 11)
+		return "Good morning!";
+	else if (hour >= 11 && hour < 18)
+		return "Good day!";
 	else if (hour >= 18 && hour < 24)
-		return "Добрый вечер!";
-	else
-		return "Неправильное время!";
-}
+		return "Good evening!";
+
+	else return "Uncorrect time!";
+} 
