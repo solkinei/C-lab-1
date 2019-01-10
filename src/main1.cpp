@@ -1,31 +1,26 @@
-#define _CRT_SECURE_NO_WARNINGS
-
 #include <stdio.h>
 #include "task1.h"
-
 #include <locale.h>
-
 int main()
 {
 	setlocale(LC_ALL, "Rus");
-
 	char gender = 0;
 	float height = 0;
 	float weight = 0;
 
-	printf("Укажите ваш пол (м или ж): ");
+	printf("РЈРєР°Р¶РёС‚Рµ РІР°С€ РїРѕР» (Рј РёР»Рё Р¶): ");
 	scanf("%c", &gender);
-	printf("Укажите ваш рост в см: ");
+	printf("РЈРєР°Р¶РёС‚Рµ РІР°С€ СЂРѕСЃС‚ РІ СЃРј: ");
 	scanf("%f", &height);
-	printf("Укажите ваш вес в кг: ");
+	printf("РЈРєР°Р¶РёС‚Рµ РІР°С€ РІРµСЃ РІ РєРі: ");
 	scanf("%f", &weight);
 
 	int result = getRecommendation(gender, height, weight);
 	if (result == 1)
-		printf("Вам нужно сбросить вес!\n");
+		printf("Р’Р°Рј РЅСѓР¶РЅРѕ СЃР±СЂРѕСЃРёС‚СЊ РІРµСЃ!\n");
 	else if (result == 0)
-		printf("Ваш вес нормальный!\n");
+		printf("Р’Р°С€ РІРµСЃ РЅРѕСЂРјР°Р»СЊРЅС‹Р№!\n");
 	else if (result == -1)
-		printf("Вам нужно набрать весь!\n");
+		printf("Р’Р°Рј РЅСѓР¶РЅРѕ РЅР°Р±СЂР°С‚СЊ РІРµСЃСЊ!\n");
 	return 0;
 }
