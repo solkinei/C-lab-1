@@ -1,15 +1,14 @@
 #include "task4.h"
 #include <stdio.h>
-#include <locale.h>
 int main()
 {
-	setlocale(LC_ALL, "Rus");
 	int feet = 0;
-	int inches = 0;
+	int inches = 0; 
+	float result = 0;
 
-	printf("Введите число футов и дюймов в формате: фут'дюйм\n");
-	scanf("%d,%d", &feet, &inches);
-	printf("%.2f cm", convert(feet, inches));
+	printf("Vvedite dannie v formate futi'dyimi:");
+	scanf("%d'%d", &feet, &inches);
+	printf("cm=%.1f",convert(feet, inches));
 
 	return 0;
-}
+} 
