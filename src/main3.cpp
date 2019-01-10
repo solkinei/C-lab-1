@@ -1,19 +1,15 @@
-#include "task3.h"
 #include <stdio.h>
-#include <locale.h>
+#include "task3.h"
+#define _USE_MATH_DEFINES
+
 int main()
 {
-	setlocale(LC_ALL, "Rus");
-	char buf[128];
-	double angle;
-	char type;
-	type = 'D';
-	type = 'R';
+	double angle=0;
+	char type=0;
+	char buf[100];
 
-	printf("Введите угол в градусах __.__D или радианах __.__R: \n");
+	printf("Vvedite chislo gradusov ili radian v formate 45.00D ili 45.00R: ");
 	scanf("%lf%c", &angle, &type);
-	convert(buf, angle, type);
-	puts(buf);
-
+	printf("%s", convert(buf, angle, type));
 	return 0;
-}
+} 
