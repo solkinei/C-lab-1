@@ -1,19 +1,15 @@
-#define _CRT_SECURE_NO_WARNINGS
-
 #include "task4.h"
 #include <stdio.h>
 #include <locale.h>
-
 int main()
 {
 	setlocale(LC_ALL, "Rus");
 	int feet = 0;
 	int inches = 0;
 
-	printf("Введите число футов и дюймов в формате: фут'дюйм\n");
+	printf("Р’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ С„СѓС‚РѕРІ Рё РґСЋР№РјРѕРІ РІ С„РѕСЂРјР°С‚Рµ: С„СѓС‚'РґСЋР№Рј\n");
 	scanf("%d,%d", &feet, &inches);
 	printf("%.2f cm", convert(feet, inches));
-
 
 	return 0;
 }
