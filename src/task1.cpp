@@ -3,9 +3,9 @@ int getRecommendation(char gender, float height, float weight)
 
 	int idealWeight = 0;
 
-	if (gender == 'ì')
+	if (gender == 'Ð¼')
 		idealWeight = height - 100;
-	if (gender == 'æ')
+	if (gender == 'Ð¶')
 		idealWeight = height - 110;
 
 	if (weight > idealWeight)
